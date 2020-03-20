@@ -5,3 +5,15 @@
     justify-content: @just;
     align-items: @align;
 }
+.button(@bgcolor,@font,@width,@padd,){
+    background-color: @bgcolor;
+    color: @font;
+    width: @width;
+    padding: @padd;
+    transition: background ease-in 1s;
+    &:hover{
+        background-color:@font ;
+        color: @bgcolor;
+    }
+}
+@phone: ~"(max-width:500px)";
